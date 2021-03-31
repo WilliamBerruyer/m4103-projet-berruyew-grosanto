@@ -13,7 +13,6 @@ function recherche(){
          }
     })
 
-    var divGif = $(".bloc-gif-attente");
-    divGif.setAttribute("display","true");
+    $("#bloc-gif-attente").css({"display": "block"});
 
 }
