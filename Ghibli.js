@@ -1,5 +1,5 @@
 function recherche(){
-  
+
     $.ajax({
       url: 'https://ghibliapi.herokuapp.com/films',
       contentType: "application/json",
@@ -8,5 +8,8 @@ function recherche(){
              console.log(result);
          }
     })
+
+    var divGif = $(".bloc-gif-attente");
+    divGif.setAttribute("display","true");
 
 }
