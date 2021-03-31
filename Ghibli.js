@@ -1,8 +1,7 @@
 function recherche(){
-  const search = $('search-input');
-
+  
     $.ajax({
-      url: 'https://ghibliapi.herokuapp.com/',
+      url: 'https://ghibliapi.herokuapp.com/films',
       contentType: "application/json",
       dataType: 'json',
       success: function(result){
