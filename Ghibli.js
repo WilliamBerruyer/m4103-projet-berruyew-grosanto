@@ -9,6 +9,11 @@ function recherche(){
             console.log(result);
             console.log(search);
             unLoadGif();
+            var element = $('#bloc-resultats');
+            $(element).after('<p>'+ result[1].title + '</p>');
+
+
+
        }
   })
 
